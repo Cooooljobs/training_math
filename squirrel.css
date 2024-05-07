@@ -1,0 +1,155 @@
+body {
+  background-color: #addaf1;
+}
+
+#window{
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+
+  min-height: 680px;
+  min-width: 1370px;
+  height: 100%;
+  width: 100%;
+
+  padding: 0;
+  background-image: url("images/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+#bush{
+  position: absolute;
+    z-index: 20; 
+  left: 0;
+    bottom: 0;
+  width: calc(40000%/1370); 
+}
+
+#grass{
+  position: absolute;
+  z-index: 5;
+  bottom: 5.5%;
+  left: -0.2%;
+  width: 100%;
+}
+
+#rabbit{
+  position: absolute;
+  z-index: 3;
+
+  width: 100%;
+
+}
+
+.bee{
+  position: absolute;
+  z-index: 8;
+  bottom: 5%;
+
+  width: 100%;
+}
+
+
+
+#frog{
+  position: absolute;
+  z-index: 10;
+
+  width: 100%;
+}
+
+#task {
+  position: fixed;  
+  bottom: 40%;
+  left: 35%;
+
+  width: 400px;
+  height: 300px;
+
+  background-image: url("images/cloud.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+
+  font-size: 40px;
+
+  div {
+    position: relative;
+    top: 20%;
+
+    display: inline-flex;
+    height: 50px;
+    width: 15px;
+  }  
+
+  .acorn {
+    width: 30px;
+
+    background-image: url("images/acorn.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
+
+  input {
+    position: absolute;
+    bottom: -10%;
+   
+    width: 50px; 
+
+    font-size: 31px;
+  }
+
+  button {
+    position: absolute;
+    top: 40%;
+    left: 75px;
+
+    width: 150px;
+
+    font-size: 20px;
+  }
+
+  #ans{
+    width: 50px;
+  }
+}
+
+
+#squirrel{
+  position: absolute;
+  z-index: 10;
+  left: 45%;
+  bottom: 0;
+  height: 50%;
+}
+
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  font-size: 40px;
+
+  border: 2px solid #ccc; /* Светло-серый цвет рамки */
+  border-radius: 15px; /* Увеличим радиус скругления углов */
+  background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+  div {
+    display: inline-flex;
+  }
+
+  #right {
+    color: limegreen;
+  }
+
+  #wrong {
+    color: red;
+  }
+}
